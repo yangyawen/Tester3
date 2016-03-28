@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="登录名："/>
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:hint="手机号/登录名/邮箱"
+                android:background="@drawable/input_box"
+                android:layout_marginRight="20dp">
+                <requestFocus />
+            </EditText>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="密    码："/>
+            <EditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input_box"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/login_submit"
+                android:background="@drawable/submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="登录"/>
+        </TableRow>
+
+
+    </TableLayout>
+</RelativeLayout>

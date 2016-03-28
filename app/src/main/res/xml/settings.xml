@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="namePref"
+        android:title="姓名"
+        android:summary="请输入您的姓名！"/>
+    <ListPreference
+        android:key="colorPref"
+        android:title="性别"
+        android:hint="选择您的性别"
+        android:entries="@array/gender_names"
+        android:entryValues="@array/gender_values"
+        android:defaultValue="GRN" />
+    <ListPreference
+        android:key="colorPref"
+        android:title="幸运色"
+        android:summary="Choose your lucky color"
+        android:entries="@array/color_names"
+        android:entryValues="@array/color_values"
+        android:defaultValue="GRN" />
+    <CheckBoxPreference
+        android:key="morePref"
+        android:title="开启定位"
+        android:defaultValue="false"/>
+    <PreferenceScreen
+        android:key="moreScreen"
+        android:title="更多定位设置"
+        android:dependency="morePref">
+        <PreferenceCategory
+            android:title="定位设置">
+            <CheckBoxPreference
+                android:key="gpsPref"
+                android:title="使用GPS定位"
+                android:summary="使用GPS确定您的位置"
+                android:defaultValue="true" />
+            <CheckBoxPreference
+                android:key="networkPref"
+                android:title="使用网络定位"
+                android:summary="使用连入的网络确定您的位置"
+                android:defaultValue="true" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

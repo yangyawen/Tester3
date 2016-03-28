@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="即时通知"/>
+
+    <RadioGroup
+        android:id="@+id/id_note_styles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/id_basic_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通通知"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/id_bittext_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大通知"/>
+
+        <RadioButton
+            android:id="@+id/id_picture_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片通知"/>
+
+        <RadioButton
+            android:id="@+id/id_list_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="列表通知"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/id_realtime_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送即时通知" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="定时通知"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="输入延时时间，如5秒钟后发送通知，在输入框中输入“5”。"/>
+    <EditText
+        android:id="@+id/id_delayedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits="1234567890"/>
+
+    <Button
+        android:id="@+id/id_delayed_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动定时通知" />
+
+
+</LinearLayout>

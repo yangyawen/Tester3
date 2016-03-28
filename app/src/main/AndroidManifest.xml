@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.tester" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zabra"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.admin.activities.Login" >
+        </activity>
+        <activity android:name="com.example.admin.activities.MainActivity" >
+
+        </activity>
+        <activity android:name="com.example.admin.activities.NotificationActivity" >
+        </activity>
+        <activity android:name="com.example.admin.broadcast.BroadcastTester" >
+        </activity>
+        <activity android:name="com.example.admin.broadcast.OrderActivity" >
+        </activity>
+        <activity
+            android:name="com.example.admin.date_storage.StorageActivity"
+            android:label="@string/title_activity_storage"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.admin.activities.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity android:name="com.example.admin.activities.Home" >
+        </activity>
+        <activity android:name="com.example.admin.activities.ShortInfoStorager" >
+        </activity>
+        <activity android:name="com.example.admin.activities.FriendsManager" >
+        </activity>
+        <activity android:name="com.example.admin.activities.TestListener" >
+        </activity>
+
+        <service
+            android:name="com.example.admin.services.MonitorService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.example.admin.activities.NoteListener" >
+        </activity>
+        <activity android:name="com.example.admin.activities.EditMemoActivity" >
+        </activity>
+        <activity android:name="com.example.admin.activities.MemoActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <declare-styleable name="ChangeColorIconWithText">
+        <attr name="sampleIcon" format="reference"/>
+        <attr name="sampleColor" format="color"/>
+        <attr name="sampleText" format="string"/>
+        <attr name="sampleTextSize" format="dimension"/>
+    </declare-styleable>
+</resources>

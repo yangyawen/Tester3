@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:padding="5dip"/>
+
+    <EditText
+        android:id="@+id/id_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+
+    <CheckBox
+        android:id="@+id/id_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you OVER 18?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message:"
+        android:padding="5dip"/>
+
+    <EditText
+        android:id="@+id/id_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3"
+        android:maxLines="3"/>
+
+    <Button
+        android:id="@+id/id_form_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="此例展示了一种简单而开销低的存储方式，用于保存用户资料、账号信息等数据，用到了SharedPreferences库，数据以xml文档的形式保存在用户私有文件夹/data中"
+        android:padding="5dip"/>
+</LinearLayout>
